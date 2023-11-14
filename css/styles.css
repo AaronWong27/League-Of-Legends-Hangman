@@ -1,0 +1,350 @@
+@charset "utf-8";
+
+
+@font-face {
+    font-family: 'rubikregular';
+    src: url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, p {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h2 {
+    color: darkblue;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+}
+header, nav, main, footer, div{
+    padding: 10px;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+body {
+    justify-content: center;
+    text-align: center;
+}
+
+
+main {
+    justify-content: space-between;
+    background-color: tan;
+    border-color:black;
+    border-width: 5px;
+}
+
+#productImage {
+    max-width: 50%;
+    height: auto;
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightcoral;
+    border: 2px;
+    border-color: black;
+    transition: opacity 1s;
+}
+
+.product-container {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 50%;
+    background-color: lightblue;
+}
+
+.button-container {
+    margin-top: 10px;
+    text-align: center;
+    background-color:aquamarine;
+}
+
+#startButton, #stopButton {
+    display: inline-block;
+    margin: 5px;
+}
+
+
+#header {
+    background-color: lightblue;
+    text-align: center;
+}
+
+.special-text{
+    font-weight: bold;
+    font-style: italic;
+}
+
+a {
+    background-color: white;
+}
+a:hover{
+    color: blue;
+}
+*/
+
+/*
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('../images/lol-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    align-items: flex-end;
+    padding: 10vw 5vw;
+    
+}
+
+.hangman-box {
+    max-width: 100%;
+}
+
+.hangbox-box h1 {
+    text-align: center;
+    font-size: 3vw;
+}
+
+.word-display {
+    display: flex;
+    gap: 3vw;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.word-display .letter {
+    width: 5vw;
+    height: 5vw;
+    background: white;
+    text-align: center;
+    border-bottom: 1vw solid black;
+}
+
+.word-display .letter.guessed {
+    border-color: transparent;
+    font-size: large;
+}
+
+.game-box h4 {
+    text-align: center;
+}
+
+.game-box .guesses-text b {
+    color: red;
+}
+
+.game-box .keyboard{
+    display: flex;
+    gap: 1vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.keyboard button{
+    text-transform: uppercase;
+    border-radius: 5px;
+    width: calc(100% / 9 - 5vw);
+    font-size: 1.5vw;
+}
+
+.keyboards .keys:hover{
+    color: blue;
+}
+
+
+@media (max-width: 782px) {
+    .container {
+        flex-direction: column;
+        padding: 10vw 5vw;
+        align-items: center;
+    }
+
+    .hangman-box h1 {
+        font-size: 5vw;
+    }
+
+    .word-display .letter {
+        width: 10vw;
+        height: 10vw;
+        border-bottom: 2vw solid black;
+    }
+
+    .word-display .letter.guessed {
+        font-size: 3vw;
+    }
+
+    .game-box h4 {
+        font-size: 3vw;
+    }
+
+    .keyboard button {
+        width: calc(33.33% - 1vw);
+        font-size: 2vw;
+    }
+    
+}*/
+
+/* 
+@media (max-width: 1000px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    body {
+        max-width: 100%; 
+        height:auto;
+    }
+} */
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 300px;
+    background: url('../images/lol-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    align-items: flex-end;
+    padding: 5vw; /* Adjusted padding */
+}
+
+.hangman-box {
+    max-width: 100%;
+}
+
+/* Adjusted font size */
+.hangman-box h1 {
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+.word-display {
+    display: flex;
+    gap: 1vw; /* Adjusted gap */
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.word-display .letter {
+    width: 3vw; /* Adjusted width */
+    height: 3vw; /* Adjusted height */
+    background: lightsalmon;
+    text-align: center;
+    border-bottom: 0.5vw solid black; /* Adjusted border */
+    border-radius: 10px;
+}
+
+.word-display .guessed {
+    border-color: transparent;
+    font-size: 3vw; /* Adjusted font size */
+}
+
+.game-box h4 {
+    text-align: center;
+    font-size: 1.5vw; /* Adjusted font size */
+}
+
+.game-box .guesses-text b {
+    color: red;
+}
+
+.game-box .keyboard {
+    display: flex;
+    gap: 0.5vw; /* Adjusted gap */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.keyboard button {
+    text-transform: uppercase;
+    border-radius: 3px; /* Adjusted border-radius */
+    width: calc(15% - 0.5vw); /* Adjusted width */
+    font-size: 1vw; /* Adjusted font size */
+}
+
+.keyboard .keys:hover {
+    background-color: lightblue;
+}
+
+#hintTextB {
+    background-color: white;
+}
+
+#guessTextB {
+    background-color: white;
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightcoral;
+    border: 2px;
+    border-color: black;
+    transition: opacity 1s;
+}
+
+
+
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+        padding: 5vw;
+        align-items: center;
+    }
+
+    .hangman-box h1 {
+        font-size: 3vw;
+    }
+
+    .word-display .letter {
+        width: 5vw;
+        height: 5vw;
+        border-bottom: 1vw solid black;
+    }
+
+    .word-display .letter.guessed {
+        font-size: 1.5vw;
+    }
+
+    .game-box h4 {
+        font-size: 1.8vw;
+    }
+
+    .keyboard button {
+        width: calc(30% - 0.5vw);
+        font-size: 1.2vw;
+    }
+}

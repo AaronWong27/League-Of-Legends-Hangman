@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+
+
+    <script src="scripts/jquery-3.7.0.min.js" defer></script>
+    <script src="scripts/champion-list.js" defer="defer"></script>
+    <script src="scripts/script.js" defer="defer"></script>
+    
+    <title>COMP2132 Final Assignment</title>
+    
+
+    <!-- make keyboard buttons their own class (for hover) -->
+</head>
+<body>
+    
+
+
+    <div class="container">
+        <div class="hangman-box">
+            <h1>Hangman Game</h1>
+            <img src="images/hangman-0.jpg" id = "hangmanImage" alt="hangman-img">
+        </div>
+        <div class="game-box">
+            <ul id = "wordDisplay" class="word-display">
+                <!-- <li class="letter"></li>
+                <li class="letter"></li>
+                <li class="letter guessed">A</li>
+                <li class="letter"></li>
+                <li class="letter"></li>
+                <li class="letter"></li> -->
+            </ul>
+            <h4 class="hint-text">
+                Hint: 
+                <b id="hintTextB">blah blah blah</b>
+            </h4>
+            <h4 id = "guessesText" class="guesses-text">
+                Incorrect guesses:
+                <b id="guessTextB">0/6</b>
+            </h4>
+            <div id= "keyboard" class="keyboard">
+                <button class="keys">a</button> <button class="keys">b</button> <button class="keys">c</button> <button class="keys">d</button> <button class="keys">e</button> <button class="keys">f</button> <button class="keys">g</button>
+                <button class="keys">h</button> <button class="keys">i</button> <button class="keys">j</button> <button class="keys">k</button> <button class="keys">l</button> <button class="keys">m</button> <button class="keys">n</button>
+                <button class="keys">o</button> <button class="keys">p</button> <button class="keys">q</button> <button class="keys">r</button> <button class="keys">s</button> <button class="keys">t</button> <button class="keys">u</button>
+                <button class="keys">v</button> <button class="keys">w</button> <button class="keys">x</button> <button class="keys">y</button> <button class="keys">z</button>  
+            </div>
+        </div>
+
+        <div id="popup">
+            <p id="popupMessage">Test</p>
+            <button id="closeButton">Close</button>
+        </div>
+    </div>
+    
+</body>
+</html>
