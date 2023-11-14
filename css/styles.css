@@ -326,13 +326,23 @@ body {
 #endPopup {
     display: none;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
+}
+
+#endPopupMessage {
+    text-align: center;
+}
+
+#endPopupMessage img {
+    max-width: 50%;
+    height: auto;
 }
 
 video {
     max-width: 30%;
     height: auto;
+    align-self: flex-end;
+    margin-top: auto;
 }
 
 #playAgainButton {
