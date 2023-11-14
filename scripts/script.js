@@ -109,6 +109,7 @@ $keysClicked.click(function(){
         if (guessCount == numberOfGuesses){
             $scoreTextB.text(`${guessCount}`);
             gameOver("VICTORY");
+
         }
         else{
             $scoreTextB.text(`${guessCount}`);
@@ -124,9 +125,11 @@ $keysClicked.click(function(){
 function gameOver(message) {
     if (message === "VICTORY"){
         endPopupMessage.innerHTML = `<img src="./images/victory.png" alt="victory-img">`
+        endPopup.style.backgroundColor = "blue";
     }
     else if (message === "DEFEAT"){
         endPopupMessage.innerHTML = `<img src="./images/defeat.png" alt="defeat-img">`
+        endPopup.style.backgroundColor = "red";
     }
     endPopup.style.display = "block";
     endPopup.style.opacity = 0;
