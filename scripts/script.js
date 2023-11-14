@@ -125,10 +125,12 @@ $keysClicked.click(function(){
 function gameOver(message) {
     if (message === "VICTORY"){
         endPopupMessage.innerHTML = `<img src="./images/victory.png" alt="victory-img">`
+        endPopupMessage.innerHTML += `<video controls> <source src="./images/deft-alpaca-dance.mp4" type="video/mp4"</video>`
         endPopup.style.backgroundColor = "blue";
     }
     else if (message === "DEFEAT"){
         endPopupMessage.innerHTML = `<img src="./images/defeat.png" alt="defeat-img">`
+        endPopupMessage.innerHTML += `<video controls> <source src="./images/screaming-marmot.mp4" type="video/mp4"</video>`
         endPopup.style.backgroundColor = "red";
     }
     endPopup.style.display = "block";
@@ -176,6 +178,7 @@ startGameButton.addEventListener("click", function(){
 playAgainButton.addEventListener("click", function() {
     hideEndPopup();
     resetGame();
+    endPopupMessage.innerHTML = ``;
 });
 
 function resetGame(){

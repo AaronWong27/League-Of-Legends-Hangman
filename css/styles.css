@@ -300,9 +300,6 @@ body {
     background-color: white;
 }
 
-
-
-
 .popup {
     position: fixed;
     top: 50%;
@@ -328,6 +325,14 @@ body {
 
 #endPopup {
     display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+video {
+    max-width: 30%;
+    height: auto;
 }
 
 #playAgainButton {
