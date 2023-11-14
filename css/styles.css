@@ -49,7 +49,7 @@ main {
     height: auto;
 }
 
-#popup {
+#endendPopup {
     display: none;
     position: fixed;
     top: 50%;
@@ -304,7 +304,7 @@ body {
     background-color: white;
 }
 
-#popup {
+.popup {
     display: none;
     position: fixed;
     top: 50%;
@@ -316,6 +316,23 @@ body {
     transition: opacity 1s;
 }
 
+#startPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightcoral;
+    border: 2px;
+    border-color: black;
+    transition: opacity 0s;
+}
+
+#playAgainButton {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 
 @media (max-width: 700px) {

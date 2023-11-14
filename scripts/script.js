@@ -9,11 +9,11 @@ const keyboardDiv = document.getElementById("keyboard");
 
 const $keysClicked = $(`.keys`);
 
-const popup = document.getElementById("popup");
+const endPopup = document.getElementById("endPopup");
 
-const popupMessage = document.getElementById("popupMessage")
+const endPopupMessage = document.getElementById("endPopupMessage")
 
-const closeButton = document.getElementById("closeButton");
+const playAgainButton = document.getElementById("playAgainButton");
 
 
 
@@ -64,6 +64,7 @@ $keysClicked.click(function(){
                 console.log("Correct letter found:", clickedLetter);
                 guessedChampion += clickedLetter;
                 rightGuessCount++;
+                this.disabled = true;
 
                 // Find all the list elements
                 $wordDisplay.find("li").each(function (index) {
@@ -91,37 +92,45 @@ $keysClicked.click(function(){
 
     if (wrongGuessCount === maxGuesses){
         gameOver("DEFEAT");
-        // need to disable all keys once you get it wrong
     }
 });
 
 function gameOver(message) {
     if (message === "VICTORY"){
-        popupMessage.innerHTML = `<p>VICTORY</p>`;
-        popupMessage.innerHTML += `<img src="./images/victory.png" alt="victory-img">`
-        
+        endPopupMessage.innerHTML = `<img src="./images/victory.png" alt="victory-img">`
     }
     else if (message === "DEFEAT"){
-        popupMessage.innerHTML += `<p>DEFEAT</p>`;
-        
+        endPopupMessage.innerHTML = `<img src="./images/defeat.png" alt="defeat-img">`
     }
-    popup.style.display = "block";
-    popup.style.opacity = 0;
+    endPopup.style.display = "block";
+    endPopup.style.opacity = 0;
     setTimeout(function() {
-        popup.style.opacity = 1;
+        endPopup.style.opacity = 1;
     }, fadeDelay);
 }
 
 
-function hidePopup() {
-    popup.style.opacity = 0;
+function hideEndPopup() {
+    endPopup.style.opacity = 0;
     setTimeout(function() {
-        popup.style.display = "none";
+        endPopup.style.display = "none";
     }, fadeDelay);
 }
 
 
 
-closeButton.addEventListener("click", function() {
-    hidePopup();
+
+playAgainButton.addEventListener("click", function() {
+    hideEndPopup();
+    resetGame();
+    //play again code
 });
+
+function resetGame(){
+    wrongGuessCount = 0;
+    rightGuessCount = 0;
+    hangmanImage.src = `images/hangman-${wrongGuessCount}.jpg`;
+    $guessesTextB.text(`${wrongGuessCount} / ${maxGuesses}`);
+    $keysClicked.prop('disabled', false);
+    getRandomWord();
+}
