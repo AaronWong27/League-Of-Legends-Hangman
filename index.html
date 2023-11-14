@@ -24,8 +24,8 @@
     <div class="container">
 
         <div id="startPopup" class ="popup">
-            <p>Please enter the number of incorrect guesses allowed:</p>
-            <input type="number" id="guessLimitInput" placeholder="Enter a number">
+            <p>Please enter the number correct guesses to win:</p>
+            <input type="text" id="correctGuessesNumber" placeholder="Enter a number">
             <button id="startGameButton">Start Game</button>
         </div>
 
@@ -49,6 +49,10 @@
             <h4 id = "guessesText" class="guesses-text">
                 Incorrect guesses:
                 <b id="guessTextB">0/6</b>
+            </h4>
+            <h4 id = "scoreText">
+                Score:
+                <b id="scoreTextB">0</b>
             </h4>
             <div id= "keyboard" class="keyboard">
                 <button class="keys">a</button> <button class="keys">b</button> <button class="keys">c</button> <button class="keys">d</button> <button class="keys">e</button> <button class="keys">f</button> <button class="keys">g</button>

@@ -296,16 +296,14 @@ body {
     background-color: lightblue;
 }
 
-#hintTextB {
+#hintTextB, #guessTextB, #scoreTextB {
     background-color: white;
 }
 
-#guessTextB {
-    background-color: white;
-}
+
+
 
 .popup {
-    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -325,6 +323,10 @@ body {
     border: 2px;
     border-color: black;
     transition: opacity 0s;
+}
+
+#endPopup {
+    display: none;
 }
 
 #playAgainButton {
