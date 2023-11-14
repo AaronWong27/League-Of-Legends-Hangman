@@ -55,6 +55,7 @@ const getRandomWord = function(){
 
     wordDisplay.innerHTML = liElements;
     currentChampion = champion;
+
 }
 
 
@@ -62,6 +63,8 @@ getRandomWord();
 
 
 $keysClicked.click(function(){
+
+    
     const clickedLetter = $(this).text();
     console.log(clickedLetter);
 
@@ -97,9 +100,6 @@ $keysClicked.click(function(){
         this.disabled = true;
     }
     $guessesTextB.text(`${wrongGuessCount} / ${maxGuesses}`);
-    
-
-    
 
     if (rightGuessCount === currentChampion.length){
         console.log("Great job!");
@@ -160,13 +160,16 @@ function showStartPopup() {
     setTimeout(function() {
         startPopup.style.opacity = 1;
     }, fadeDelay);
+    $keysClicked.prop('disabled', true);
 }
+
+$keysClicked.prop('disabled', true);
 
 startGameButton.addEventListener("click", function(){
     hideStartPopup();
     const numberOfGuessesInput = document.getElementById("correctGuessesNumber");
     numberOfGuesses = parseInt(numberOfGuessesInput.value);
-
+    $keysClicked.prop('disabled', false);
 });
 
 
@@ -181,7 +184,7 @@ function resetGame(){
     guessCount = 0;
     guessedChampion = ``;
     $scoreTextB.text(`${guessCount}`);
-
+    $keysClicked.prop('disabled', true);
     hangmanImage.src = `images/hangman-${wrongGuessCount}.jpg`;
     $guessesTextB.text(`${wrongGuessCount} / ${maxGuesses}`);
     $keysClicked.prop('disabled', false);
