@@ -225,7 +225,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    min-width: 300px;
+    /* min-width: 300px; */
     background: url('../images/lol-background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -353,11 +353,16 @@ video {
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 1200px) {
     .container {
         flex-direction: column;
         padding: 5vw;
         align-items: center;
+    }
+
+    .hangman-box img{
+        display:inline-block;
+        max-width: 50%;
     }
 
     .hangman-box h1 {
@@ -382,4 +387,19 @@ video {
         width: calc(30% - 0.5vw);
         font-size: 1.2vw;
     }
+}
+
+@media (max-height: 700px){
+    #endPopupMessage img {
+        max-width: 25%;
+        height: auto;
+    }
+    
+    video {
+        max-width: 15%;
+        height: auto;
+        align-self: flex-end;
+        margin-top: auto;
+    }
+    
 }

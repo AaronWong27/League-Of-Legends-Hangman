@@ -124,6 +124,8 @@ $keysClicked.click(function(){
 
 function gameOver(message) {
     if (message === "VICTORY"){
+        console.log("Viewport width: " + window.innerWidth);
+        console.log("Viewport height: " + window.innerHeight);
         endPopupMessage.innerHTML = `<img src="./images/victory.png" alt="victory-img">`
         endPopupMessage.innerHTML += `<p>You are FAKER!</p>`
         endPopupMessage.innerHTML += `<video controls> <source src="./images/deft-alpaca-dance.mp4" type="video/mp4"</video>`
