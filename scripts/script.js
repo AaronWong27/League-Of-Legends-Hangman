@@ -59,8 +59,6 @@ const getRandomWord = function(){
 }
 
 
-getRandomWord();
-
 
 $keysClicked.click(function(){
 
@@ -176,6 +174,7 @@ startGameButton.addEventListener("click", function(){
     const numberOfGuessesInput = document.getElementById("correctGuessesNumber");
     numberOfGuesses = parseInt(numberOfGuessesInput.value);
     $keysClicked.prop('disabled', false);
+    getRandomWord();
 });
 
 
