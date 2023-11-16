@@ -220,12 +220,15 @@ body {
     }
 } */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    /* min-width: 300px; */
     background: url('../images/lol-background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -234,11 +237,16 @@ body {
 .container {
     display: flex;
     align-items: flex-end;
-    padding: 5vw; /* Adjusted padding */
+    justify-content: center;
 }
 
 .hangman-box {
-    max-width: 100%;
+    align-items: center;
+}
+
+.hangman-box img{
+    max-width: 80%;
+    height: auto;
 }
 
 /* Adjusted font size */
@@ -267,6 +275,10 @@ body {
 .word-display .guessed {
     border-color: transparent;
     font-size: 3vw; /* Adjusted font size */
+}
+
+.game-box {
+    align-items: top;
 }
 
 .game-box h4 {
@@ -402,4 +414,37 @@ video {
         margin-top: auto;
     }
     
+    .container {
+        flex-direction: row;
+        padding: 5vw;
+        align-items: center;
+    }
+
+    .hangman-box img{
+        display:inline-block;
+        max-width: 50%;
+    }
+
+    .hangman-box h1 {
+        font-size: 3vw;
+    }
+
+    .word-display .letter {
+        width: 5vw;
+        height: 5vw;
+        border-bottom: 1vw solid black;
+    }
+
+    .word-display .letter.guessed {
+        font-size: 1.5vw;
+    }
+
+    .game-box h4 {
+        font-size: 1.8vw;
+    }
+
+    .keyboard button {
+        width: calc(30% - 0.5vw);
+        font-size: 1.2vw;
+    }
 }

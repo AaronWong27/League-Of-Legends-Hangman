@@ -94,8 +94,8 @@ $keysClicked.click(function(){
     else {
         wrongGuessCount++;
         console.log("wrong count:" + wrongGuessCount);
-        hangmanImage.src = `images/hangman-${wrongGuessCount}.jpg`;
-        const audio = new Audio('./images/roblox-oof.mp3');
+        hangmanImage.src = `hangman-images/hangman-${wrongGuessCount}.jpg`;
+        const audio = new Audio('./media/roblox-oof.mp3');
         audio.play();
         this.disabled = true;
     }
@@ -128,13 +128,13 @@ function gameOver(message) {
         console.log("Viewport height: " + window.innerHeight);
         endPopupMessage.innerHTML = `<img src="./images/victory.png" alt="victory-img">`
         endPopupMessage.innerHTML += `<p>You are FAKER!</p>`
-        endPopupMessage.innerHTML += `<video controls> <source src="./images/deft-alpaca-dance.mp4" type="video/mp4"</video>`
+        endPopupMessage.innerHTML += `<video controls> <source src="./media/deft-alpaca-dance.mp4" type="video/mp4"</video>`
         endPopup.style.backgroundColor = "blue";
     }
     else if (message === "DEFEAT"){
         endPopupMessage.innerHTML = `<img src="./images/defeat.png" alt="defeat-img">`
         endPopupMessage.innerHTML += `<p>The champion was: ${currentChampion}</p>`;
-        endPopupMessage.innerHTML += `<video controls> <source src="./images/screaming-marmot.mp4" type="video/mp4"</video>`
+        endPopupMessage.innerHTML += `<video controls> <source src="./media/screaming-marmot.mp4" type="video/mp4"</video>`
         endPopup.style.backgroundColor = "red";
     }
     endPopup.style.display = "block";
