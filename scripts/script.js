@@ -193,7 +193,7 @@ function resetGame(){
     guessedChampion = ``;
     $scoreTextB.text(`${guessCount}`);
     $keysClicked.prop('disabled', true);
-    hangmanImage.src = `images/hangman-${wrongGuessCount}.jpg`;
+    hangmanImage.src = `hangman-images/hangman-${wrongGuessCount}.jpg`;
     $guessesTextB.text(`${wrongGuessCount} / ${maxGuesses}`);
     $keysClicked.prop('disabled', false);
     showStartPopup();
