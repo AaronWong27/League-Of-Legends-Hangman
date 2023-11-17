@@ -232,6 +232,7 @@ body {
     background: url('../images/lol-background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    margin:0 auto;
 }
 
 .container {
