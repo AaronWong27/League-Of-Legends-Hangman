@@ -23,6 +23,7 @@ const startGameButton = document.getElementById("startGameButton");
 
 const $scoreTextB = $(`#scoreTextB`);
 
+const correctGuessesNumberInput = document.getElementById("correctGuessesNumber");
 
 
 
@@ -170,6 +171,21 @@ function showStartPopup() {
 }
 
 $keysClicked.prop('disabled', true);
+
+
+correctGuessesNumberInput.addEventListener("input", function() {
+    const userInput = correctGuessesNumberInput.value;
+    const userInputLowercase = userInput.toLowerCase();
+
+    // Check if the userInput is a valid number
+    if (userInputLowercase === "unlimited" || (Number(userInput) > 0 && !isNaN(userInput))) {
+      startGameButton.removeAttribute("disabled");
+    } else {
+      startGameButton.setAttribute("disabled", true);
+    }
+  });
+
+
 
 startGameButton.addEventListener("click", function(){
     hideStartPopup();
