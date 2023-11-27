@@ -73,11 +73,11 @@ const championList = [
     },
     {
         champion: "Caitlyn",
-        hint: "Deft"
+        hint: "Cupcake"
     },
     {
         champion: "Camille",
-        hint: "Rock Paper ___"
+        hint: "Chogath R"
     },
     {
         champion: "Cassiopeia",
@@ -218,5 +218,445 @@ const championList = [
     {
         champion: "Kalista",
         hint: "Hop Hop Hop"
+    },
+    {
+        champion: "Karma",
+        hint: "Why does r q hurt so much?"
+    },
+    {
+        champion: "Karthus",
+        hint: "Dead screaming"
+    },
+    {
+        champion: "Kassadin",
+        hint: "Void dad"
+    },
+    {
+        champion: "Katarina",
+        hint: "Knives, a lot of them"
+    },
+    {
+        champion: "Kayle",
+        hint: "Level 16 god"
+    },
+    {
+        champion: "Kayn",
+        hint: "Bipolar"
+    },
+    {
+        champion: "Kennen",
+        hint: "Pikachu"
+    },
+    {
+        champion: "Khazix",
+        hint: "Evolution"
+    },
+    {
+        champion: "Kindred",
+        hint: "Mark"
+    },
+    {
+        champion: "Kled",
+        hint: "Is on some type of substance"
+    },
+    {
+        champion: "Kogmaw",
+        hint: "Kamikaza"
+    },
+    {
+        champion: "Leblanc",
+        hint: "There are 2 of them"
+    },
+    {
+        champion: "Leesin",
+        hint: "ArrowTron"
+    },
+    {
+        champion: "Leona",
+        hint: "Sun"
+    },
+    {
+        champion: "Lillia",
+        hint: "Bambi"
+    },
+    {
+        champion: "Lissandra",
+        hint: "Ice witch"
+    },
+    {
+        champion: "Lucian",
+        hint: "Guns blazing"
+    },
+    {
+        champion: "Lulu",
+        hint: "That tasted purple"
+    },
+    {
+        champion: "Lux",
+        hint: "Riot games money printer"
+    },
+    {
+        champion: "Malphite",
+        hint: "Rock"
+    },
+    {
+        champion: "Malzahar",
+        hint: "QSS tax"
+    },
+    {
+        champion: "Maokai",
+        hint: "Throws babies"
+    },
+    {
+        champion: "MasterYi",
+        hint: "I WAS IN ALPHA"
+    },
+    {
+        champion: "Milio",
+        hint: "Messi"
+    },
+    {
+        champion: "Miss Fortune",
+        hint: "Pirate"
+    },
+    {
+        champion: "Mordekaiser",
+        hint: "You stuck here with me"
+    },
+    {
+        champion: "Morgana",
+        hint: "I can't move"
+    },
+    {
+        champion: "Naafiri",
+        hint: "Who let the dogs out"
+    },
+    {
+        champion: "Nami",
+        hint: "Sashimi"
+    },
+    {
+        champion: "Nasus",
+        hint: "Dawg"
+    },
+    {
+        champion: "Nautilus",
+        hint: "Dies a lot"
+    },
+    {
+        champion: "Neeko",
+        hint: "Count minions please"
+    },
+    {
+        champion: "Nidalee",
+        hint: "Cougar lady"
+    },
+    {
+        champion: "Nilah",
+        hint: "Whip"
+    },
+    {
+        champion: "Nocturne",
+        hint: "Paranoia"
+    },
+    {
+        champion: "NunuandWillump", // maybe add some stuff to make use of this
+        hint: "Kesha"
+    },
+    {
+        champion: "Olaf",
+        hint: "Axe man"
+    },
+    {
+        champion: "Orianna",
+        hint: "Ball"
+    },
+    {
+        champion: "Ornn",
+        hint: "Makes stuff"
+    },
+    {
+        champion: "Pantheon",
+        hint: "Always wanted to be a baker"
+    },
+    {
+        champion: "Poppy",
+        hint: "Hammer"
+    },
+    {
+        champion: "Pyke",
+        hint: "G2"
+    },
+    {
+        champion: "Qiyana",
+        hint: "Elements"
+    },
+    {
+        champion: "Quinn",
+        hint: "Flies around"
+    },
+    {
+        champion: "Rakan",
+        hint: "Grand entrance"
+    },
+    {
+        champion: "Rammus",
+        hint: "Turtle"
+    },
+    {
+        champion: "RekSai",
+        hint: "Is a female"
+    },
+    {
+        champion: "Rell",
+        hint: "Legs don't work properly"
+    },
+    {
+        champion: "Reneta",
+        hint: "Now I can kill my teammates"
+    },
+    {
+        champion: "Renekton",
+        hint: "Croc"
+    },
+    {
+        champion: "Rengar",
+        hint: "I got the eyes on me"
+    },
+    {
+        champion: "Riven",
+        hint: "Q AA Q AA Q AA"
+    },
+    {
+        champion: "Rumble",
+        hint: "Gurren Lagann"
+    },
+    {
+        champion: "Ryze",
+        hint: "Blue"
+    },
+    {
+        champion: "Samira",
+        hint: "S+"
+    },
+    {
+        champion: "Sejuani",
+        hint: "Hog Ridaaa"
+    },
+    {
+        champion: "Senna",
+        hint: "Wife"
+    },
+    {
+        champion: "Seraphine",
+        hint: "Skarner hates you"
+    },
+    {
+        champion: "Sett",
+        hint: "Fister"
+    },
+    {
+        champion: "Shaco",
+        hint: "Ronald Mcdonald"
+    },
+    {
+        champion: "Shen",
+        hint: "Tanky Ninja"
+    },
+    {
+        champion: "Shyvana",
+        hint: "Kills Dragons"
+    },
+    {
+        champion: "Singed",
+        hint: "Gas Gas Gas"
+    },
+    {
+        champion: "Sion",
+        hint: "Solo Bolo"
+    },
+    {
+        champion: "Sivir",
+        hint: "The game won't end until I have 500 cs"
+    },
+    {
+        champion: "Skarner",
+        hint: "Stinger"
+    },
+    {
+        champion: "Sona",
+        hint: "Guitar Hero"
+    },
+    {
+        champion: "Soraka",
+        hint: "Ambulance"
+    },
+    {
+        champion: "Swain",
+        hint: "Old Bird"
+    },
+    {
+        champion: "Sylas",
+        hint: "Chained"
+    },
+    {
+        champion: "Syndra",
+        hint: "Balls"
+    },
+    {
+        champion: "TahmKench",
+        hint: "Frog or Fish?"
+    },
+    {
+        champion: "Taliyah",
+        hint: "Throws rocks"
+    },
+    {
+        champion: "Talon",
+        hint: "Parkour"
+    },
+    {
+        champion: "Taric",
+        hint: "Ezreal's Boyfriend"
+    },
+    {
+        champion: "Teemo",
+        hint: "Satan"
+    },
+    {
+        champion: "Thresh",
+        hint: "Click on the ___"
+    },
+    {
+        champion: "Tristana",
+        hint: "Goomba Stomp"
+    },
+    {
+        champion: "Trundle",
+        hint: "Pillar"
+    },
+    {
+        champion: "Trynamere",
+        hint: "Doesn't die"
+    },
+    {
+        champion: "TwistedFate",
+        hint: "Cards"
+    },
+    {
+        champion: "Twitch",
+        hint: "Rat"
+    },
+    {
+        champion: "Udyr",
+        hint: "JoJo's"
+    },
+    {
+        champion: "Urgot",
+        hint: "Shoots really fast"
+    },
+    {
+        champion: "Varus",
+        hint: "Gumayusi Baron"
+    },
+    {
+        champion: "Vayne",
+        hint: "Is Boosted"
+    },
+    {
+        champion: "Veigar",
+        hint: "Stacks AP"
+    },
+    {
+        champion: "VelKoz",
+        hint: "Big Eye"
+    },
+    {
+        champion: "Vex",
+        hint: "Emo Poppy"
+    },
+    {
+        champion: "Vi",
+        hint: "Loves Caitlyn"
+    },
+    {
+        champion: "Viego",
+        hint: "Ruined"
+    },
+    {
+        champion: "Viktor",
+        hint: "Glorious Evolution"
+    },
+    {
+        champion: "Vladimir",
+        hint: "Blood"
+    },
+    {
+        champion: "Volibear",
+        hint: "Bear"
+    },
+    {
+        champion: "Warwick",
+        hint: "Vander?"
+    },
+    {
+        champion: "Wukong",
+        hint: "Monke"
+    },
+    {
+        champion: "Xayah",
+        hint: "Feathers"
+    },
+    {
+        champion: "Xerath",
+        hint: "Electric Thing"
+    },
+    {
+        champion: "Xin Zhao",
+        hint: "Lance"
+    },
+    {
+        champion: "Yasuo",
+        hint: "Shit 1"
+    },
+    {
+        champion: "Yone",
+        hint: "Shit 2"
+    },
+    {
+        champion: "Yorick",
+        hint: "Digs Graves"
+    },
+    {
+        champion: "Yuumi",
+        hint: "Book"
+    },
+    {
+        champion: "Zac",
+        hint: "Goo"
+    },
+    {
+        champion: "Zed",
+        hint: "XY_"
+    },
+    {
+        champion: "Zeri",
+        hint: "Neon"
+    },
+    {
+        champion: "Ziggs",
+        hint: "Bye Bye Towers"
+    },
+    {
+        champion: "Zilean",
+        hint: "Time"
+    },
+    {
+        champion: "Zoe",
+        hint: "Loves Ezreal"
+    },
+    {
+        champion: "Zyra",
+        hint: "Plants"
     }
 ];
