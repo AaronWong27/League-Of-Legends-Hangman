@@ -10,9 +10,247 @@ $primary_color: #a31a1a;
     border:3px solid $border-color;    
 }
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('../images/lol-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0 auto;
+}
+
 /* Responsive Images Reset */
 img {
     max-width: 100%;
     height: auto;
     @include rounded-shaded-box(5px, 5px, 20px, $primary_color);
 }
+
+video {
+    max-width: 100%;
+    height: auto;
+    @include rounded-shaded-box(5px, 5px, 20px, $primary_color);
+}
+
+
+.container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.hangman-box {
+    align-items: center;
+}
+
+.hangman-box img{
+    max-width: 80%;
+    height: auto;
+}
+
+/* Adjusted font size */
+.hangman-box h1 {
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+.word-display {
+    display: flex;
+    gap: 1vw; /* Adjusted gap */
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.word-display .letter {
+    width: 3vw; /* Adjusted width */
+    height: 3vw; /* Adjusted height */
+    background: lightsalmon;
+    text-align: center;
+    border-bottom: 0.5vw solid black; /* Adjusted border */
+    border-radius: 10px;
+}
+
+.word-display .guessed {
+    border-color: transparent;
+    font-size: 3vw; /* Adjusted font size */
+}
+
+.game-box {
+    align-items: top;
+}
+
+.game-box h4 {
+    text-align: center;
+    font-size: 1.5vw; /* Adjusted font size */
+}
+
+.game-box .guesses-text b {
+    color: red;
+}
+
+.game-box .keyboard {
+    display: flex;
+    gap: 0.5vw; /* Adjusted gap */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.keyboard button {
+    text-transform: uppercase;
+    border-radius: 3px; /* Adjusted border-radius */
+    width: calc(15% - 0.5vw); /* Adjusted width */
+    font-size: 1vw; /* Adjusted font size */
+}
+
+.keyboard .keys:hover {
+    background-color: lightblue;
+}
+
+#hintTextB, #guessTextB, #scoreTextB {
+    background-color: white;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* //background-color: lightcoral; */
+    border: 2px;
+    border-color: black;
+    transition: opacity 1s;
+    border-radius: 10px;
+}
+
+#startPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightcoral;
+    border: 2px;
+    border-color: black;
+    transition: opacity 0s;
+}
+
+#endPopup {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#endPopupMessage {
+    text-align: center;
+}
+
+#endPopupMessage img {
+    max-width: 50%;
+    height: auto;
+}
+
+video {
+    max-width: 30%;
+    height: auto;
+    align-self: flex-end;
+    margin-top: auto;
+}
+
+#playAgainButton {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+        padding: 5vw;
+        align-items: center;
+    }
+
+    .hangman-box img{
+        display:inline-block;
+        max-width: 50%;
+    }
+
+    .hangman-box h1 {
+        font-size: 3vw;
+    }
+
+    .word-display .letter {
+        width: 5vw;
+        height: 5vw;
+        border-bottom: 1vw solid black;
+    }
+
+    .word-display .letter.guessed {
+        font-size: 1.5vw;
+    }
+
+    .game-box h4 {
+        font-size: 1.8vw;
+    }
+
+    .keyboard button {
+        width: calc(30% - 0.5vw);
+        font-size: 1.2vw;
+    }
+}
+
+@media (max-height: 700px){
+    #endPopupMessage img {
+        max-width: 25%;
+        height: auto;
+    }
+    
+    video {
+        max-width: 15%;
+        height: auto;
+        align-self: flex-end;
+        margin-top: auto;
+    }
+    
+    .container {
+        flex-direction: row;
+        padding: 5vw;
+        align-items: center;
+    }
+
+    .hangman-box img{
+        display:inline-block;
+        max-width: 50%;
+    }
+
+    .hangman-box h1 {
+        font-size: 3vw;
+    }
+
+    .word-display .letter {
+        width: 5vw;
+        height: 5vw;
+        border-bottom: 1vw solid black;
+    }
+
+    .word-display .letter.guessed {
+        font-size: 1.5vw;
+    }
+
+    .game-box h4 {
+        font-size: 1.8vw;
+    }
+
+    .keyboard button {
+        width: calc(30% - 0.5vw);
+        font-size: 1.2vw;
+    }
+}
+
