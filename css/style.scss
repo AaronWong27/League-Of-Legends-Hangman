@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+
+//sass variables
+$primary_color: #a31a1a;
+
+@mixin rounded-shaded-box($xoffset, $yoffset, $rounded-corners, $border-color){
+    box-shadow:$xoffset $yoffset 10px #5d5d5d;	  
+    border-radius:$rounded-corners;    
+    border:3px solid $border-color;    
+}
+
+/* Responsive Images Reset */
+img {
+    max-width: 100%;
+    height: auto;
+    @include rounded-shaded-box(5px, 5px, 20px, $primary_color);
+}
