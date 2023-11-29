@@ -79,6 +79,9 @@ $keysClicked.click(function(){
                 
                 this.disabled = true;
 
+                const audio = new Audio('./media/good-job.mp3');
+                audio.play();
+
                 // Find all the list elements
                 $wordDisplay.find("li").each(function (index) {
                     // Update all matching occurrences in the word display
@@ -125,14 +128,16 @@ $keysClicked.click(function(){
 
 function gameOver(message) {
     if (message === "VICTORY"){
-        console.log("Viewport width: " + window.innerWidth);
-        console.log("Viewport height: " + window.innerHeight);
+        const audio = new Audio('./media/league-of-legends-victory.mp3');
+        audio.play();
         endPopupMessage.innerHTML = `<img src="./images/victory.png" alt="victory-img">`
         endPopupMessage.innerHTML += `<p>You are FAKER!</p>`
         endPopupMessage.innerHTML += `<video controls> <source src="./media/deft-alpaca-dance.mp4" type="video/mp4"</video>`
         endPopup.style.backgroundColor = "blue";
     }
     else if (message === "DEFEAT"){
+        const audio = new Audio('./media/league-of-legends-defeat.mp3');
+        audio.play();
         endPopupMessage.innerHTML = `<img src="./images/defeat.png" alt="defeat-img">`
         endPopupMessage.innerHTML += `<p>The champion was: ${currentChampion}</p>`;
         endPopupMessage.innerHTML += `<video controls> <source src="./media/screaming-marmot.mp4" type="video/mp4"</video>`
@@ -193,6 +198,9 @@ startGameButton.addEventListener("click", function(){
     numberOfGuesses = parseInt(numberOfGuessesInput.value);
     $keysClicked.prop('disabled', false);
     getRandomWord();
+    const audio = new Audio('./media/hype-boy.mp3');
+    audio.volume = 0.25;
+    audio.play();
 });
 
 
@@ -200,6 +208,7 @@ playAgainButton.addEventListener("click", function() {
     hideEndPopup();
     resetGame();
     endPopupMessage.innerHTML = ``;
+    document.getElementById("hintTextB").innerText = "This is where hint's go!";
 });
 
 function resetGame(){

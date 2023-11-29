@@ -2,7 +2,7 @@
 
 
 //sass variables
-$border-color: #a31a1a;
+$border-color: black;
 
 @mixin rounded-shaded-box($xoffset, $yoffset, $rounded-corners, $border-color){
     box-shadow:$xoffset $yoffset 10px #5d5d5d;	  
