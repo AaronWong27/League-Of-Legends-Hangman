@@ -52,7 +52,7 @@ const championList = [
         hint: "Caretaker"
     },
     {
-        champion: "Belveth",
+        champion: "Bel'veth",
         hint: "Zerg rush"
     },
     {
@@ -84,7 +84,7 @@ const championList = [
         hint: "Hiss"
     },
     {
-        champion: "Chogath",
+        champion: "Cho'gath",
         hint: "Nom Nom Nom"
     },
     {
@@ -208,11 +208,11 @@ const championList = [
         hint: "Powder"
     },
     {
-        champion: "Ksante",
+        champion: "K'Sante",
         hint: "WOW! League of Legends!"
     },
     {
-        champion: "Kaisa",
+        champion: "Kai'sa",
         hint: "AD AP Hybrid"
     },
     {
@@ -248,7 +248,7 @@ const championList = [
         hint: "Pikachu"
     },
     {
-        champion: "Khazix",
+        champion: "Kha'zix",
         hint: "Evolution"
     },
     {
@@ -260,7 +260,7 @@ const championList = [
         hint: "Is on some type of substance"
     },
     {
-        champion: "Kogmaw",
+        champion: "Kog'maw",
         hint: "Kamikaza"
     },
     {
@@ -360,7 +360,7 @@ const championList = [
         hint: "Paranoia"
     },
     {
-        champion: "NunuandWillump", // maybe add some stuff to make use of this
+        champion: "Nunu&Willump", // maybe add some stuff to make use of this
         hint: "Kesha"
     },
     {
@@ -404,7 +404,7 @@ const championList = [
         hint: "Turtle"
     },
     {
-        champion: "RekSai",
+        champion: "Rek'Sai",
         hint: "Is a female"
     },
     {
@@ -568,7 +568,7 @@ const championList = [
         hint: "Stacks AP"
     },
     {
-        champion: "VelKoz",
+        champion: "Vel'Koz",
         hint: "Big Eye"
     },
     {

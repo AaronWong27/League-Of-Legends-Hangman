@@ -198,9 +198,6 @@ startGameButton.addEventListener("click", function(){
     numberOfGuesses = parseInt(numberOfGuessesInput.value);
     $keysClicked.prop('disabled', false);
     getRandomWord();
-    const audio = new Audio('./media/hype-boy.mp3');
-    audio.volume = 0.25;
-    audio.play();
 });
 
 
