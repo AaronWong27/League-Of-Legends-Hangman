@@ -44,7 +44,7 @@ let animationStarted = false;
 const getRandomWord = function(){
     // selects a random word
     const {champion, hint} = championList[Math.floor(Math.random() * championList.length)];
-    console.log(champion, hint);
+    
     document.getElementById("hintTextB").innerText = hint;
     //wordDisplay.innerHTML = champion.split("").map(function() {return `<li class="letter"></li>`}).join(``);
 
@@ -65,7 +65,6 @@ $keysClicked.click(function(){
 
     
     const clickedLetter = $(this).text();
-    console.log(clickedLetter);
 
     // Check if there is a match
     if (currentChampion.toLowerCase().includes(clickedLetter)){
@@ -89,7 +88,6 @@ $keysClicked.click(function(){
                     if (currentChampion[index].toLowerCase() === clickedLetter) {
                         $(this).addClass("word-display guessed");
                         $(this).text(clickedLetter.toUpperCase());
-                        console.log(guessedChampion);
                     }
                 });
             }
@@ -98,7 +96,6 @@ $keysClicked.click(function(){
     }
     else {
         wrongGuessCount++;
-        console.log("wrong count:" + wrongGuessCount);
         hangmanImage.src = `hangman-images/hangman-${wrongGuessCount}.jpg`;
         const audio = new Audio('./media/roblox-oof.mp3');
         audio.volume = 0.2;
@@ -108,10 +105,7 @@ $keysClicked.click(function(){
     $guessesTextB.text(`${wrongGuessCount} / ${maxGuesses}`);
 
     if (rightGuessCount === currentChampion.length){
-        console.log("Great job!");
         guessCount++;
-        console.log("guess count:" + guessCount);
-        console.log("number of guesses" + numberOfGuesses);
         if (guessCount == numberOfGuesses){
             $scoreTextB.text(`${guessCount}`);
             gameOver("VICTORY");
