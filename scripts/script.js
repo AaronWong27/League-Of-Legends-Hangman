@@ -80,6 +80,7 @@ $keysClicked.click(function(){
                 this.disabled = true;
 
                 const audio = new Audio('./media/good-job.mp3');
+                audio.volume = 0.2;
                 audio.play();
 
                 // Find all the list elements
@@ -100,6 +101,7 @@ $keysClicked.click(function(){
         console.log("wrong count:" + wrongGuessCount);
         hangmanImage.src = `hangman-images/hangman-${wrongGuessCount}.jpg`;
         const audio = new Audio('./media/roblox-oof.mp3');
+        audio.volume = 0.2;
         audio.play();
         this.disabled = true;
     }

@@ -8,6 +8,7 @@ $border-color: black;
     box-shadow:$xoffset $yoffset 10px #5d5d5d;	  
     border-radius:$rounded-corners;    
     border:3px solid $border-color;    
+    border-style: dotted;
 }
 
 * {
