@@ -1,6 +1,6 @@
-# COMP2132-Final
+# League of Legends Hangman
 
-This is my final project for COMP2132 at BCIT.
+This is my final project for Javascript at University.
 
 It is a Hangman Game inspired by League of Legends.
 
