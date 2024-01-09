@@ -6,6 +6,8 @@ It is a Hangman Game inspired by League of Legends.
 
 Uses HTML, Javascript, CSS, SASS, and JQuery
 
+Assignment Grade: 50/50
+
 # How to Play
 
 1. Download the .zip
