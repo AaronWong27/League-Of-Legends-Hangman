@@ -1,6 +1,6 @@
 # League of Legends Hangman
 
-This is my final project for a JavaScript course in university
+This is my final project for a JavaScript course at BCIT (COMP 2132)
 
 It is a Hangman Game inspired by League of Legends.
 
